@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import './AdicionarUsuario.css'
 
-const AdicionarUsuario = (props) => {
+const AdicionarUsuario = () => {
 
   const [nome, setNome] = useState('')
   const [sobrenome, setSobrenome] = useState('')
@@ -23,7 +23,6 @@ const AdicionarUsuario = (props) => {
         setNome('')
         setSobrenome('')
         setEmail('')
-        props.adicionarUsuario(dados)
       })
   }
 
